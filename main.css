@@ -1,3 +1,13 @@
+body {
+    background-color: #202020;
+}
+
+.lead {
+    color: #FFF;
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+}
 /* Accordian */
 #accordian {
     list-style-type: none;
@@ -7,8 +17,8 @@
     margin: 0 auto;
     border-radius: 5px;
     -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+       -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+            box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
 }
 
 .acc-item:first-child {
@@ -49,29 +59,19 @@
 /* accordian with css */
 
 .accordion {
-    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
-    box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
     font-family: Arial, Helvetica, sans-serif;
-    border-color: #505050;
-    border-style: solid;
-    border-width: 0px;
+    border: 0px solid rgb(80, 80, 80);
     border-radius: 8px;
     margin: 0 auto;
     /* height: 454px; */
     width: 700px;
-}
-
-.accordion > ul > li,
-.accordion-title,
-.accordion-content,
-.accordion-separator {
-    float: none;
+    -webkit-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+       -moz-box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
+            box-shadow: 0px 75px 35px -55px rgba(10, 30, 65, 0.6);
 }
 
 .accordion > ul > li {
     background-color:rgb(87, 195, 211);
-    /* background-color: #1f1f1f; */
     margin-right: -0px;
     margin-bottom: -290px;
 }
@@ -83,7 +83,6 @@
 
 .accordion-title,
 .accordion-select  {
-    /* background-color: #3A373E; */
     background-color:rgb(87, 195, 211);
     color: #ffffff;
     width: 700px;
@@ -102,12 +101,6 @@
 }
 
 .accordion-title span  {	
-    transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -ms-writing-mode: lr-tb;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
     margin-bottom: 0px;
     line-height: 40px;
 }
@@ -116,7 +109,6 @@
     background-color: #FFF;
     color: #000;
     height: 234px;
-    width: 644px;
     padding: 28px;
 }
 
@@ -126,11 +118,9 @@
     margin-bottom: 1px;
 }
 
-/* Do not change following properties, they aren't 
-generated automatically and are common for each slider. */
 .accordion {
-    margin-top:  40px;
     overflow: hidden;
+    width: 600px;
 }
 
 .accordion > ul {
@@ -161,7 +151,6 @@ generated automatically and are common for each slider. */
     bottom: 0px;
     width: 100%;
     white-space: nowrap;
-    /* top: -20px; */
 }
 
 .accordion-content {
@@ -178,7 +167,73 @@ generated automatically and are common for each slider. */
 
 /* Carousel */
 
-#carousel-container {
-    width: 700px;
-    height: 500px;
+.slideshow-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mySlides {
+    position: relative;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 12px;
+    /* left: -288px; */
+    right: 228px;
+    width: 100%;
+    text-align: center;
+}
+
+/* slick carousel */
+
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    background: rgb(45, 45, 45);
+}
+
+.fat-class img {
+    height: 600px;
+    width: 100%;
+}
+
+.slick-active button {
+    color: orange;
+}
+
+.slick-dots li::before {
+    color: orange;
 }

@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery example</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 
     <!-- Accordian -->
-
+    <div class="lead">Accordian with jQuery - no slide toggle</div>
     <ul id="accordian">
         <li class="acc-item">
             <span>Section 1</span>
@@ -26,7 +28,8 @@
         </li>
     </ul>
 
-    <!-- Accordian with css -->
+    <!-- Accordian with css only-->
+    <div class="lead">Accordian with pure css / radio buttons</div>
     <div class="accordion">
             <ul>
                 <li>
@@ -63,9 +66,54 @@
         </div>
 
     <!-- Carousel -->
+    <div class="lead">Carousel no fadeIn fadeOut</div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="https://interfacelift.com/wallpaper/7yz4ma1/03950_godsrays_1280x720.jpg">
+            <div class="text">Sunset in the Cascades : smpoutdoors</div>
+        </div>
+            
+        <div class="mySlides">
+            <img src="https://interfacelift.com/wallpaper/7yz4ma1/03965_sunsetinthecascades_1280x720.jpg">
+            <div class="text">Seljalandsfoss, Iceland : Robin Kamp</div>
+        </div>
+            
+        <div class="mySlides">
+            <img src="https://interfacelift.com/wallpaper/7yz4ma1/03958_seljalandsfossiceland_1280x720.jpg">
+            <div class="text">Gods Rays : illuminati</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#9756;</a>
+        <a class="next" onclick="plusSlides(1)">&#9758;</a>
+    </div>
+    <br>
+        
 
-    <div id="carousel-container">
-
+    <!-- Slick carousel -->
+    <div class="lead">Carousel using slick carousels plugin</div>
+    <div class="container">
+        <div class="fat-class">
+            <div>
+                <img src="./images/star-citizen-1.jpg">
+            </div>
+            <div>
+                <img src="./images/star-citizen-2.jpg">
+            </div>
+            <div>
+                <img src="./images/star-citizen-3.png">
+            </div>
+            <div>
+                <img src="./images/star-citizen-4.jpg">
+            </div>
+            <div>
+                <img src="./images/star-citizen-5.png">
+            </div>   
+            <div>
+                <img src="./images/star-citizen-6.png">
+            </div>
+            <div>
+                <img src="./images/star-citizen-7.png">
+            </div>
+        </div>
     </div>
     
     <script
@@ -74,5 +122,9 @@
     crossorigin="anonymous"></script>
     <script src="carousel.js"></script>
     <script src="main.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+				
 </body>
 </html>
